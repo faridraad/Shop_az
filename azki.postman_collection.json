@@ -1,0 +1,447 @@
+{
+	"info": {
+		"_postman_id": "c1a51715-fa24-40f6-96a9-3330685f57a5",
+		"name": "azki",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Provider",
+			"item": [
+				{
+					"name": "all providers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1020/v1/providers",
+							"host": [
+								"localhost"
+							],
+							"port": "1020",
+							"path": [
+								"v1",
+								"providers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "new provider",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"provider3\",\r\n    \"address\":\"tehran\",\r\n    \"phoneNumber\":\"09125\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1020/v1/providers",
+							"host": [
+								"localhost"
+							],
+							"port": "1020",
+							"path": [
+								"v1",
+								"providers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "enquiry system",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1020/v1/providers/enquiry-system?productId=12,52,26,20",
+							"host": [
+								"localhost"
+							],
+							"port": "1020",
+							"path": [
+								"v1",
+								"providers",
+								"enquiry-system"
+							],
+							"query": [
+								{
+									"key": "productId",
+									"value": "12,52,26,20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "provider by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1020/v1/providers/45",
+							"host": [
+								"localhost"
+							],
+							"port": "1020",
+							"path": [
+								"v1",
+								"providers",
+								"45"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "new user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"f3\",\r\n    \"password\":\"12434\",\r\n    \"firstName\":\"farhad\",\r\n    \"lastName\":\"feri\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1020/v1/users",
+							"host": [
+								"localhost"
+							],
+							"port": "1020",
+							"path": [
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1020/v1/users",
+							"host": [
+								"localhost"
+							],
+							"port": "1020",
+							"path": [
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "review",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"2.f\",\r\n    \"password\":\"12434\",\r\n    \"firstName\":\"farid\",\r\n    \"lastName\":\"raad\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1020/v1/products/review?categoryId=39&pageNumber=1&pageSize=1",
+							"host": [
+								"localhost"
+							],
+							"port": "1020",
+							"path": [
+								"v1",
+								"products",
+								"review"
+							],
+							"query": [
+								{
+									"key": "categoryId",
+									"value": "39"
+								},
+								{
+									"key": "pageNumber",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "new product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryId\":\"39\",\r\n    \"title\":\"pro6\",\r\n    \"description\":\"product desc\",\r\n    \"image\":\"img.png,img2.png\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1020/v1/products",
+							"host": [
+								"localhost"
+							],
+							"port": "1020",
+							"path": [
+								"v1",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "new category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"cat2\",\r\n    \"description\":\"description\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1020/v1/categories",
+							"host": [
+								"localhost"
+							],
+							"port": "1020",
+							"path": [
+								"v1",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all categories",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryId\":\"1\",\r\n    \"title\":\"pro1\",\r\n    \"description\":\"description\",\r\n    \"image\":\"image1.png,image2.png\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1020/v1/categories",
+							"host": [
+								"localhost"
+							],
+							"port": "1020",
+							"path": [
+								"v1",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comment",
+			"item": [
+				{
+					"name": "new comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"memberId\":33,\r\n    \"providerId\":44,\r\n    \"productId\":36,\r\n    \"comment\":\"comment1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1020/v1/comments",
+							"host": [
+								"localhost"
+							],
+							"port": "1020",
+							"path": [
+								"v1",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all comments",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"provider3\",\r\n    \"address\":\"tehran\",\r\n    \"phoneNumber\":\"09125\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1020/v1/comments",
+							"host": [
+								"localhost"
+							],
+							"port": "1020",
+							"path": [
+								"v1",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vote",
+			"item": [
+				{
+					"name": "new vote",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"memberId\":33,\r\n    \"providerId\":44,\r\n    \"productId\":40,\r\n    \"comment\":\"comment8\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1020/v1/votes",
+							"host": [
+								"localhost"
+							],
+							"port": "1020",
+							"path": [
+								"v1",
+								"votes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
