@@ -9,8 +9,12 @@ I create a Spring Boot project(Rest APIs) for a simple shop. You need the follow
 - JavaSE 11
 - Maven 3.3.9
 
+# Address Url for access API
+		http://94.130.101.235:1020
+		for example Get All Categories : http://94.130.101.235:1020/v1/categories 
+
 # Dependencies
-Open the pom.xml file for spring-aop configuration:
+Open the pom.xml file for spring configuration:
 
       <parent>
         <groupId>org.springframework.boot</groupId>
@@ -55,3 +59,5 @@ and dpendencies:
 
 1. Products Review : return product list based on category also return at least 3 comments for each of them 
 2. Enquiry System : return price of products for each provider
+
+
