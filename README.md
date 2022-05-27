@@ -55,6 +55,3 @@ and dpendencies:
 
 1. Products Review : return product list based on category also return at least 3 comments for each of them 
 2. Enquiry System : return price of products for each provider
-
-# Note
-1. Please run sql files at resources folder for initializing data
