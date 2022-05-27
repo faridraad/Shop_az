@@ -1,12 +1,11 @@
 package org.farid.service;
 
 import org.farid.configuration.resources.ApplicationProperties;
-import org.farid.intrface.ICategory;
+import org.farid.service.intrface.ICategory;
 import org.farid.model.domain.CategoryNewRequest;
 import org.farid.model.dto.BaseDTO;
 import org.farid.model.dto.CategoryDTO;
 import org.farid.model.dto.MetaDTO;
-import org.farid.model.dto.ProductProviderDTO;
 import org.farid.model.entity.Category;
 import org.farid.model.mapper.CategoryMapper;
 import org.farid.repository.CategoryRepository;
@@ -14,8 +13,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 
 @Service

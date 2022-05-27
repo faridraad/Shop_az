@@ -1,7 +1,7 @@
 package org.farid.service;
 
 import org.farid.configuration.resources.ApplicationProperties;
-import org.farid.intrface.IProductProvider;
+import org.farid.service.intrface.IProductProvider;
 import org.farid.model.domain.ProductProviderNewRequest;
 import org.farid.model.dto.BaseDTO;
 import org.farid.model.dto.MetaDTO;

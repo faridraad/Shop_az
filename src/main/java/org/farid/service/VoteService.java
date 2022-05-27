@@ -13,9 +13,7 @@ import org.farid.repository.VoteRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.farid.configuration.resources.ApplicationProperties;
-import org.farid.intrface.IVote;
-
-import java.util.Optional;
+import org.farid.service.intrface.IVote;
 
 
 @Service

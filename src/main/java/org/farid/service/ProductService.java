@@ -6,7 +6,7 @@ import org.farid.model.entity.Category;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.farid.configuration.resources.ApplicationProperties;
-import org.farid.intrface.IProduct;
+import org.farid.service.intrface.IProduct;
 import org.farid.model.domain.ProductChangeRequest;
 import org.farid.model.domain.ProductNewRequest;
 import org.farid.model.entity.Product;

@@ -1,14 +1,13 @@
 package org.farid.service;
 
 import org.farid.configuration.exception.ServiceException;
-import org.farid.configuration.exception.ServiceExceptionHandler;
 import org.farid.model.dto.UserDTO;
 import org.farid.model.mapper.UserMapper;
 import org.farid.utility.CommonUtility;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.farid.configuration.resources.ApplicationProperties;
-import org.farid.intrface.IUser;
+import org.farid.service.intrface.IUser;
 import org.farid.model.domain.UserNewRequest;
 import org.farid.model.dto.BaseDTO;
 import org.farid.model.dto.MetaDTO;
@@ -17,8 +16,6 @@ import org.farid.repository.MemberRepository;
 
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
-import java.io.UnsupportedEncodingException;
-import java.security.GeneralSecurityException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;

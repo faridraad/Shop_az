@@ -5,14 +5,13 @@ import org.farid.model.domain.ProviderNewRequest;
 import org.farid.model.dto.BaseDTO;
 import org.farid.model.dto.MetaDTO;
 import org.farid.model.dto.ProviderDTO;
-import org.farid.model.entity.Product;
 import org.farid.model.entity.Provider;
 import org.farid.model.mapper.ProviderMapper;
 import org.farid.repository.ProviderRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.farid.configuration.resources.ApplicationProperties;
-import org.farid.intrface.IProvider;
+import org.farid.service.intrface.IProvider;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -10,7 +10,7 @@ import org.farid.model.entity.Provider;
 import org.farid.repository.CommentRepository;
 import org.springframework.stereotype.Service;
 import org.farid.configuration.resources.ApplicationProperties;
-import org.farid.intrface.IComment;
+import org.farid.service.intrface.IComment;
 
 
 @Service

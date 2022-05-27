@@ -1,4 +1,4 @@
-package org.farid.intrface;
+package org.farid.service.intrface;
 
 
 import org.farid.model.domain.CommentNewRequest;
